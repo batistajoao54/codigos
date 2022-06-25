@@ -6,6 +6,11 @@ st.title("Estou AQUI")
 
 uploaded_file = st.file_uploader("Choose a file")
 
-df = pd.read_csv(uploaded_file)
+if uploaded_file != "":
+  df = pd.read_csv(uploaded_file)
 
-st.dataframe(df)
+  st.dataframe(df)
+
+else:
+  st.write("carregue um arquivo")
+
