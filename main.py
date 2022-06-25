@@ -4,4 +4,4 @@ import pandas as pd
 
 st.title("Estou AQUI")
 
-
+uploaded_file = st.file_uploader("Choose a file")
