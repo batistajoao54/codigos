@@ -6,7 +6,7 @@ st.title("Estou AQUI")
 
 uploaded_file = st.file_uploader("Choose a file")
 
-dados = st.selectbox("ver dados")
+dados = st.checkbox("ver dados")
 
 if dados == True:
   df = pd.read_csv(uploaded_file)
