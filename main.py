@@ -49,7 +49,7 @@ if pesquisa == "NOME":
     os = st.selectbox('OS',lista_os)
     df_os = df_marca[df_marca['os'] == os]
 
-  st.dataframe(df_os)
+  st.table(df_os)
 
 
 
