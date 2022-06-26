@@ -37,14 +37,14 @@ if pesquisa == "NOME":
 
 
   lista_marca = list(df_nome['marca'].unique())
-  lista_marca.insert(0, '')
+  #lista_marca.insert(0, '')
   with col_marca:
     marca = st.selectbox('MARCA',lista_marca)
     df_marca = df_nome[df_nome['marca'] == marca]
 
 
   lista_os = list(df_marca['os'].unique())
-  lista_os.insert(0, '')
+  #lista_os.insert(0, '')
   with col_os:
     os = st.selectbox('OS',lista_os)
     df_os = df_marca[df_marca['os'] == os]
