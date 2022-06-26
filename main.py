@@ -20,7 +20,7 @@ with col_dados:
 #-----------------------------------------------------------------------------
 
 #configurando os modos de pesquisas
-pesquisa = st.radio('MODO DA PESQUISA', ('NOME','MARCA','OS'))
+pesquisa = st.radio('MODO DA PESQUISA', ('','NOME','MARCA','OS'))
 
 #-------------------------------------------------------------------------------
 
